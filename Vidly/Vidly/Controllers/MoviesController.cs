@@ -13,7 +13,8 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() {Name = "Shreck"};
-            return View();
+            //put movie model in the view so it can be rendered
+            return View(movie);
         }
     }
 }
