@@ -1,12 +1,11 @@
 ﻿
 
-@using Vidly.Models
-@model Vidly.Models.Movie
+@model Vidly.ViewModels.RandomMovieViewMode
 
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@(((Movie)ViewData["Moview"]).Name)</h2>
+<h2>@Model.Movie.Name</h2>
 
