@@ -8,6 +8,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers
 {
+    [System.Runtime.InteropServices.Guid("29F251BD-7674-4416-9D6C-8CCDEEDA64EC")]
     public class MoviesController : Controller
     {
         // GET: Movies/Random 
