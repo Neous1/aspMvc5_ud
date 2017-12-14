@@ -15,8 +15,8 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() {Name = "Shreck"};
-            //put movie model in the view so it can be rendered
-            return View(movie);
+            ViewData["Movie"] = movie;
+            return View();
         }
 
         [Route("movies/released/{year}/{month:regex(\\d{2}):range(1,12)}")]
