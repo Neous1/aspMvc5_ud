@@ -10,6 +10,10 @@ namespace Vidly.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
+        //add a navigation property
+        public MembershipType MembershipType { get; set; }
+        //add foreign key
+        public byte MembershipTypeId { get; set; }
 
     }
 }
