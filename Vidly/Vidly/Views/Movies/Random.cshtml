@@ -8,9 +8,11 @@
 }
 
 @{
-    var className = Model.Customers.Count > 5 ? "popular" : null;
+    var className = Model.Customers.Count > 3 ? "popular" : null;
 }
-<h2>@Model.Movie.Name</h2>
+
+<h2 class ="@className">@Model.Movie.Name</h2> 
+
 @if (Model.Customers.Count == 0)
 {
     <p>No one has rented this movie before.</p>
